@@ -35,6 +35,10 @@ public class Board {
 		return pieces[position.getRow()][position.getColumn()];
 	}
 	
-	
+	//settar o local de uma peça no tabuleiro
+	public void placePiece(Piece piece, Position position) {
+		pieces[position.getRow()][position.getColumn()] = piece;
+		piece.position = position;
+	}
 	
 }
