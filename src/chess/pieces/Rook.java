@@ -15,6 +15,11 @@ public class Rook extends ChessPiece{
 		return "R";
 	}
 	
-	
+	@Override
+	public boolean[][] possibleMoves() {
+		// todas posições começam com falso;
+		boolean[][] mat = new boolean[getBoard().getRows()][getBoard().getColumns()];
+		return mat;
+	}
 	
 }
